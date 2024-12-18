@@ -2,6 +2,7 @@
 
 # Aliases
 alias rf='rm -rf'
+alias refresh='exec zsh'
 
 # Functions
 function mkd {
