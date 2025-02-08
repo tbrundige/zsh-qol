@@ -9,6 +9,11 @@ alias h='cd'
 
 # Functions
 function mkd {
+  if [[ -z "$1" ]]; then
+    echo "Usage: mkd <filename>"
+    return 1
+  fi
+
   mkdir "$1"
   cd "$1"
 }
