@@ -12,3 +12,14 @@ function mkd {
   mkdir "$1"
   cd "$1"
 }
+
+function touchy() {
+  if [[ -z "$1" ]]; then
+    echo "Usage: touchy <filename>"
+    return 1
+  fi
+
+  touch "$1"
+  chmod +x "$1"
+}
+
